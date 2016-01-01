@@ -5,8 +5,10 @@ $(window).resize( function(){
   $('#resolution').replaceWith(''+windowWidth+'X'+windowHeight);
 });
 
-$(document).ready(function () {
-  var windowWidth = $(window).width();
-  var windowHeight = $(window).height();
-  $('#resolution').replaceWith(''+windowWidth+'X'+windowHeight);
+$(window).ready(function () {
+  while(true){
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+    $('#resolution').replaceWith(''+windowWidth+'X'+windowHeight);
+  }
 });
