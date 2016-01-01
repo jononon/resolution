@@ -1,11 +1,12 @@
 
 $(window).resize( function(){
   var windowWidth = $(window).width();
-  var windowHeight = $(window).width();
+  var windowHeight = $(window).height();
   $('#resolution').replaceWith(''+windowWidth+'X'+windowHeight);
 });
-/*
+
 $(document).ready(function () {
-  $('#resoluion').append('test');
+  var windowWidth = $(window).width();
+  var windowHeight = $(window).height();
+  $('#resolution').replaceWith(''+windowWidth+'X'+windowHeight);
 });
-*/
