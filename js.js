@@ -5,7 +5,7 @@ $(window).resize( function(){
   $('#resolution').replaceWith(''+windowWidth+'X'+windowHeight);
 });
 */
-$(window).ready(function () {
+$(document).ready(function () {
   while(true){
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
